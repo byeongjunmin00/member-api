@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: member-api
+  profiles:
+    active: local
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
