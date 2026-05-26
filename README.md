@@ -106,6 +106,26 @@ DB 접속 정보랑 팀 이름을 Parameter Store에 넣어놓고 EC2에서 환�
 
 ---
 
+## LV 4 — Docker + CI/CD
+
+### Docker
+- Dockerfile 작성해서 앱을 도커 이미지로 빌드
+- 베이스 이미지: `eclipse-temurin:17-jdk-alpine`
+
+### GitHub Actions CI/CD
+- main 브랜치에 push하면 자동으로 빌드 + Docker Hub에 이미지 push
+- EC2에서 docker pull로 이미지 받아서 실행
+
+### GitHub Actions 성공
+
+![GitHub Actions](screenshots/github-actions.png)
+
+### EC2 Docker 컨테이너
+
+![Docker PS](screenshots/docker-ps.png)
+
+---
+
 ## 실행 방법
 
 ### 로컬
