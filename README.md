@@ -146,3 +146,4 @@ scp -i [키파일] build/libs/member-api-0.0.1-SNAPSHOT.jar ec2-user@[EC2-IP]:~/
 nohup java -jar member-api-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod &
 ```
 
+
